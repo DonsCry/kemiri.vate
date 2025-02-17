@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemiri Export Import</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Kemiri CV Indomakmur</h1>
+            <p class="animate__animated animate__fadeInUp">Menyediakan kemiri berkualitas untuk kebutuhan Anda.</p>
+            <nav>
+                <ul>
+                    <li><a href="#kemiri-pecah">Kemiri Pecah</a></li>
+                    <li><a href="#kemiri-bulat">Kemiri Bulat</a></li>
+                    <li><a href="#harga">Harga</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide" style="background-image: url('pecah.jpg');"></div>
+            <div class="slide" style="background-image: url('bulat.jpg');"></div>
+            <div class="slide" style="background-image: url('image3.jpg');"></div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.hero-slider .slide');
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.style.display = i === index ? 'block' : 'none';
+                });
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                showSlide(currentIndex);
+            }
+
+            showSlide(currentIndex);
+            setInterval(nextSlide, 3000); // Change image every 3 seconds
+        });
+    </script>
+    <div class="container">
+        <h2 class="animate__animated animate__fadeIn">Selamat Datang di Kemiri Export Import</h2>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">Kami menyediakan kemiri berkualitas tinggi untuk kebutuhan ekspor dan impor.</p>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">Kemiri kami dipilih dengan cermat dari petani terbaik di Indonesia, memastikan kualitas dan kesegaran yang optimal. Kami menawarkan berbagai jenis kemiri, termasuk kemiri pecah dan kemiri bulat, yang siap memenuhi kebutuhan bisnis Anda.</p>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">Dengan pengalaman bertahun-tahun dalam industri ini, kami berkomitmen untuk memberikan pelayanan terbaik dan produk berkualitas tinggi kepada pelanggan kami di seluruh dunia.</p>
+        <a href="#kontak" class="btn animate__animated animate__fadeIn animate__delay-2s">Hubungi Kami</a>
+    </div>
+    </section>
+
+    <main>
+        <section id="kemiri-pecah" class="product-section">
+            <div class="container">
+                <h1 class="animate__animated animate__fadeInLeft">Kemiri Pecah</h1>
+                <p class="animate__animated animate__fadeInLeft animate__delay-1s">Kemiri pecah adalah kemiri yang telah dipecah.</p>
+                <img src="pecah.jpg" width="300" height="300" alt="Kemiri Pecah" class="product-image animate__animated animate__fadeInUp">
+            </div>
+        </section>
+        <section id="kemiri-bulat" class="product-section">
+            <div class="container">
+                <h1 class="animate__animated animate__fadeInRight">Kemiri Bulat</h1>
+                <p class="animate__animated animate__fadeInRight animate__delay-1s">Kemiri bulat adalah kemiri yang masih dalam bentuk bulat.</p>
+                <img src="bulat.jpg" width="300" height="300" alt="Kemiri Bulat" class="product-image animate__animated animate__fadeInUp">
+            </div>
+        </section>
+        <section id="harga" class="price-section">
+            <div class="container">
+                <h1 class="animate__animated animate__fadeIn">Harga</h1>
+                <table class="price-table animate__animated animate__fadeIn animate__delay-1s">
+                    <thead>
+                        <tr>
+                            <th>Jenis Kemiri</th>
+                            <th>Harga per Kg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kemiri Pecah</td>
+                            <td>Rp 47,500</td>
+                        </tr>
+                        <tr>
+                            <td>Kemiri Bulat</td>
+                            <td>Rp 53,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="price-note animate__animated animate__fadeIn animate__delay-2s">Harga yang kami tampilkan adalah harga saat ini.</p>
+                <p class="price-note animate__animated animate__fadeIn animate__delay-2s">Harga bisa berubah-ubah setiap waktu.</p>
+            </div>
+        </section>
+        <section id="kontak" class="contact-section">
+            <div class="container">
+                <h1 class="animate__animated animate__fadeIn">Hubungi Kami</h1>
+                <div class="contact-info animate__animated animate__fadeIn animate__delay-1s">
+                    <p><strong>Alamat:</strong> Jl. Polowijen 4, no 29, Kecamatan Blimbing, Kota Malang, Jawa Timur, Indonesia</p>
+                    <p><strong>Telepon:</strong> <a href="tel:+620895326038364">+62 809-532-603-8364</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/620895326038364">+62 809-532-603-8364</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:radendenis@gmail.com">radendenis@gmail.com</a></p>
+                    <p><strong>Instagram:</strong> <a href="https://instagram.com/kemiriexport" target="_blank">@kemiriexport</a></p>
+                </div>
+                <div class="social-links animate__animated animate__fadeIn animate__delay-2s">
+                    <a href="https://wa.me/620895326038364" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/kemiriexport" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:radendenis@gmail.com"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Kami</h3>
+                    <p>Kemiri Export Import CV Indomakmur adalah perusahaan terpercaya dalam menyediakan kemiri berkualitas tinggi.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="#kemiri-pecah">Kemiri Pecah</a></li>
+                        <li><a href="#kemiri-bulat">Kemiri Bulat</a></li>
+                        <li><a href="#harga">Harga</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Polowijen 4, no 29, Kecamatan Blimbing, Kota Malang</p>
+                    <p><i class="fas fa-phone"></i> +62 809-532-603-8364</p>
+                    <p><i class="fas fa-envelope"></i> radendenis@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Kemiri Export Import CV Indomakmur. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
